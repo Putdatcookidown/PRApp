@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/buttonHandicap"
+                android:layout_width="wrap_content"
+                android:layout_height="205dp"
+                android:background="@drawable/rookieplayers2019"
+                android:shadowColor="#000000"
+                android:text="Handicap"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#000000"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/buttonInstruction"
+                android:layout_width="wrap_content"
+                android:layout_height="205dp"
+                android:textSize="25sp"
+                android:background="@drawable/juniorcoaches"
+                android:text="Instruction"
+                android:textColor="#fff"/>
+
+            <Button
+                android:id="@+id/buttonSchedule"
+                android:layout_width="match_parent"
+                android:layout_height="205dp"
+                android:textSize="25sp"
+                android:background="@drawable/bgagooglelogo"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonCourse"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#147D03"
+                android:text="Course Information"
+                android:textSize="25sp"
+                android:padding="15dp"
+                android:drawableLeft="@drawable/pineridgegolfcourselogo"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

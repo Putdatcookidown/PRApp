@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstructionActivity"
+    tools:showIn="@layout/instruction">
+
+    <ScrollView
+        tools:layout_width="match_parent"
+        tools:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/BGA_Notes"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:background="#4AB831"
+                android:shadowColor="#000000"
+                android:text="BGA Notes from Instructor" />
+
+            <Button
+                android:id="@+id/My_Bag"
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                android:background="@drawable/mybag"
+                android:textSize="24sp"
+                android:shadowColor="#000000"
+                android:shadowDx="2"
+                android:shadowDy="-2"
+                android:shadowRadius="0.1"
+                android:textAllCaps="true"
+                android:text="My Bag"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/FlightScope"
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                android:background="@drawable/rookieplayers2019"
+                android:text="Flightscope"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/TPI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tpi" />
+
+            <TextView
+                android:id="@+id/Student_Notes"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:background="#4AB831"
+                android:shadowColor="#000000"
+                android:text="Student_Notes" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FC0707"
+                android:text="Handicap"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Handicap_Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF0000"
+                android:text="18"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Recent_Round1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="75" />
+
+                <Button
+                    android:id="@+id/Recent_Round2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="80" />
+
+                <Button
+                    android:id="@+id/Recent_Round3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="72" />
+
+                <Button
+                    android:id="@+id/Recent_Round4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="90" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Statistics"
+                android:layout_width="match_parent"
+                android:layout_height="@android:dimen/thumbnail_height"
+                android:background="@drawable/statback"
+                android:text="Statistics" />
+
+            <Button
+                android:id="@+id/USGA"
+                android:layout_width="match_parent"
+                android:layout_height="244dp"
+                android:background="@drawable/usga" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
